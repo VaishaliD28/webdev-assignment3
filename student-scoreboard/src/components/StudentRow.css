@@ -1,0 +1,123 @@
+.student-row {
+  transition: background-color 0.2s ease;
+}
+
+.student-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.student-score {
+  font-weight: 600;
+}
+
+.score-display {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #f0f0f0;
+  border-radius: 20px;
+  font-weight: 600;
+  color: #555;
+}
+
+.score-input {
+  width: 80px;
+  padding: 8px;
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.score-input:focus {
+  border-color: #764ba2;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.status-pass {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-fail {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-edit {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-edit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn-save {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-save:hover {
+  background-color: #218838;
+}
+
+.btn-cancel {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-cancel:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+  .action-buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .btn-edit, .btn-save, .btn-cancel {
+    padding: 6px 10px;
+    font-size: 0.75rem;
+  }
+  
+  .score-input {
+    width: 70px;
+    padding: 6px;
+  }
+}
